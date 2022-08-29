@@ -1,6 +1,4 @@
 // Creo due cicli uno per il pc e uuno per il giocatore 
-const el = document.getElementById('does-not-exist');
-console.log(el); // 👉️ null
 
 
 
@@ -9,18 +7,17 @@ console.log(el); // 👉️ null
 
 
 
-let humanGamer = Math.floor(Math.random() * 6)
-let pcGamer = Math.floor(Math.random() * 6)
-let elementHuman = document.querySelector('human')
-let elementPc = document.querySelector('pc')
-let textWinner = 'Hai vinto'
+let humanGamer = Math.floor(Math.random() * 6 + 1)
+console.log(humanGamer)
+let pcGamer = Math.floor(Math.random() * 6 + 1)
+console.log(pcGamer)
+
 // elementHuman.innerHTML = humanGamer
 // elementPc.innerHTML = pcGamer
 if (humanGamer > pcGamer) {
-    // elementHuman.append = `${textWinner}`
-} else if (pcGamer > humanGamer) {
-    // elementPc.append = `${textWinner}`
-
+    console.log('Hai vinto Tu')
+} else if (humanGamer < pcGamer) {
+    console.log('Hai vinto')
+} else {
+    console.log('parità')
 }
-console.log(humanGamer)
-console.log(pcGamer)
